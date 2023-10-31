@@ -1,0 +1,104 @@
+:root {
+  --primary-bg-color: rgb(17, 27, 46);
+  --secondary-bg-color: rgb(6, 9, 34);
+  --text-color: rgb(136, 134, 134);
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  color: var(--text-color);
+  background-color: var(--primary-bg-color);
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+section {
+  padding: 30px;
+}
+
+section.section_hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.section_recipes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.recipe_link {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.recipe_link:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(68, 68, 68, 0.1);
+  background-color: rgba(
+    8,
+    12,
+    40,
+    0.9
+  ); /* slightly lighter than the original color */
+}
+
+.recipe_link img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+article.recipe section {
+  padding: 15px 30px;
+}
+
+article.recipe section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article.recipe section:first-of-type p {
+  font-size: 1.35rem;
+  letter-spacing: 0.06rem;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+article.recipe section ul {
+  list-style: square;
+}
+article.recipe section ul li,
+article.recipe section ol li,
+article.recipe section:nth-of-type(3) {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+}

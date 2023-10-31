@@ -4,21 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Odin Recipes</h1>
-    <img
-      src="./assets/AdobeStock_364715486.jpeg"
-      alt="Various recipes"
-      width="100%"
-      height="auto"
-    />
-    <p>Check out some of my <strong>favourite</strong> recipes!</p>
-    <div>
-      <h2>Recipes</h2>
-      <a href="./recipes/lasagna.html">Lasagna</a>
-      <a href="./recipes/chickenmurphy.html">Chicken Murphy</a>
-      <a href="./recipes/beefstew.html">Slow Cooker Beef Stew</a>
-    </div>
+    <main>
+      <section class="section_hero">
+        <h1>Odin Recipes</h1>
+        <h2>Check out some of my <strong>favourite</strong> recipes!</h2>
+      </section>
+      <article>
+        <h3>Recipes</h3>
+        <section class="section_recipes">
+          <a href="./recipes/lasagna.html" class="recipe_link"
+            ><img
+              src="./assets/AdobeStock_129270484.jpeg"
+              alt="Lasagna"
+            />Lasagna</a
+          >
+          <a href="./recipes/chickenmurphy.html" class="recipe_link"
+            ><img
+              src="./assets/34870-chicken-murphy-ddmfs-4x3-02da98bb5627455493026bda330c989d.webp"
+              alt="Chicken Murphy"
+            />Chicken Murphy</a
+          >
+          <a href="./recipes/beefstew.html" class="recipe_link"
+            ><img
+              src="./assets/14685-slow-cooker-beef-stew-i-DDMFS-4x3-6f0208563f4c43d6a80fdb077c19fe4e.webp"
+              alt="Beef Stew"
+            />Slow Cooker Beef Stew</a
+          >
+        </section>
+      </article>
+    </main>
   </body>
 </html>
